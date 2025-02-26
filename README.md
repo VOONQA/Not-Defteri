@@ -1,50 +1,80 @@
-# Welcome to your Expo app 👋
+# Denemenot - Not Alma Uygulaması
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+React Native ve Expo ile geliştirilmiş not alma uygulaması.
 
-## Get started
+## Gereksinimler
 
-1. Install dependencies
+- [Node.js](https://nodejs.org/) (v18.x önerilir, minimum v14.17.0)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- [Expo Go](https://expo.dev/client) (iOS veya Android cihazınızda)
 
-   ```bash
-   npm install
+## Teknik Detaylar
+- React: 18.3.1
+- React Native: 0.76.7
+- Expo: 52.0.37
+- TypeScript: 5.3.3
+
+## Kurulum Adımları
+
+1. Docker container'ı başlatın:
+ - docker-compose up --build
+
+Not: Docker Desktop açık olmalı.
+## Uygulamayı Test Etme
+- http://localhost:8081 bu adresten test edebilirsiniz.
+### Expo Go ile Test (Önerilen)
+ 
+1. Bilgisayarınızın IP adresini öğrenin:
+       Windows için
+         -ipconfig
+      macOS/Linux için
+         -ifconfig
+
+   
+2. Expo Go uygulamasında:
+   - Uygulamayı açın
+   - "Enter URL manually" seçeneğini seçin
+   - Aşağıdaki URL formatını kullanın (IP adresinizi girin):
+   ```
+   exp://192.168.1.X:8081
    ```
 
-2. Start the app
+Not: Telefonunuz ve bilgisayarınızın aynı WiFi ağında olması gerekiyor.
 
-   ```bash
-    npx expo start
-   ```
+## Özellikler
 
-In the output, you'll find options to open the app in a
+- Not oluşturma, düzenleme ve silme
+- Klasör yönetimi
+- Çöp kutusu (30 gün saklama)
+- Yazı tipi ve boyutu ayarları
+- Arama fonksiyonu
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Teknolojiler
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- React Native 0.76.7
+- Expo 52.0.37
+- TypeScript 5.3.3
+- Docker
+- AsyncStorage (Yerel depolama)
 
-## Get a fresh project
+## Sorun Giderme
 
-When you're ready, run:
+1. Docker bağlantı hatası alıyorsanız:
+   - Docker Desktop'ın çalıştığından emin olun
+   - Portların müsait olduğunu kontrol edin (8081, 19000-19002)
 
-```bash
-npm run reset-project
-```
+2. Expo Go bağlantı sorunu:
+   - IP adresinin doğru olduğunu kontrol edin
+   - Aynı WiFi ağında olduğunuzdan emin olun
+   - Güvenlik duvarı ayarlarını kontrol edin
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Katkıda Bulunma
 
-## Learn more
+1. Bu repository'yi fork edin
+2. Feature branch'i oluşturun (`git checkout -b feature/AmazingFeature`)
+3. Değişikliklerinizi commit edin (`git commit -m 'Add some AmazingFeature'`)
+4. Branch'inize push edin (`git push origin feature/AmazingFeature`)
+5. Pull Request oluşturun
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
