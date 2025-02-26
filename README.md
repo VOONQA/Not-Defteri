@@ -15,8 +15,10 @@ React Native ve Expo ile geliştirilmiş not alma uygulaması.
 - TypeScript: 5.3.3
 
 ## Kurulum Adımları
-
-1. Docker container'ı başlatın:
+1.docker-compose.yml dosyasında bu kısıma kendi IP adresinizi girmeniz gerekmektedir
+ environment:
+      - REACT_NATIVE_PACKAGER_HOSTNAME=192.168.1.X # Kendi IP adresiniz
+2. Docker container'ı başlatın:
  - docker-compose up --build
 
 Not: Docker Desktop açık olmalı.
@@ -38,7 +40,7 @@ Not: Docker Desktop açık olmalı.
    ```
    exp://192.168.1.X:8081
    ```
-
+  
 Not: Telefonunuz ve bilgisayarınızın aynı WiFi ağında olması gerekiyor.
 
 ## Özellikler
