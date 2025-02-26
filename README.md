@@ -16,7 +16,7 @@ React Native ve Expo ile geliştirilmiş not alma uygulaması.
 
 ## Kurulum Adımları
 1.docker-compose.yml dosyasında bu kısıma kendi IP adresinizi girmeniz gerekmektedir
- environment:
+ - environment:
       - REACT_NATIVE_PACKAGER_HOSTNAME=192.168.1.X # Kendi IP adresiniz
 2. Docker container'ı başlatın:
  - docker-compose up --build
