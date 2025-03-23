@@ -70,13 +70,7 @@ Not: Telefonunuz ve bilgisayarınızın aynı WiFi ağında olması gerekiyor.
    - Aynı WiFi ağında olduğunuzdan emin olun
    - Güvenlik duvarı ayarlarını kontrol edin
 
-## Katkıda Bulunma
 
-1. Bu repository'yi fork edin
-2. Feature branch'i oluşturun (`git checkout -b feature/AmazingFeature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Add some AmazingFeature'`)
-4. Branch'inize push edin (`git push origin feature/AmazingFeature`)
-5. Pull Request oluşturun
 
 
 
